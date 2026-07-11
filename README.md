@@ -23,11 +23,11 @@ npx skills add https://github.com/royz/agent-skills --skill <skill-name>
 ```
 
 **Example:**
-To install the `mantine-init` skill:
+To install the `mantine` skill:
 ```bash
-npx skills add https://github.com/royz/agent-skills --skill mantine-init
+npx skills add https://github.com/royz/agent-skills --skill mantine
 ```
 
 ## Available Skills
 
-- **mantine-init**: Integrates the Mantine component library into a React project.
+- **mantine**: Comprehensive Mantine skill for integrating the component library, configuring themes, and generating standard component patterns.
