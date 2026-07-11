@@ -33,7 +33,9 @@ You are executing the Mantine integration skill. Follow these steps sequentially
    - If no lockfile is found, use the user's global rule preference (`pnpm`) or ask the user.
 
 3. **Install Packages**: Using the `run_command` tool, execute the installation command for the packages selected by the user. If the current project is part of a monorepo then install the packages within the particular project, not in the root dir.
-
+   - **CRITICAL INSTRUCTION**: Under no circumstances manually add packages in `package.json`. You must install/update packages by using `pnpm add <packagename>@latest` or `pnpm add <packagename>@<specific-version>`. Of course, use the relevant package manager according to the current project.
+   - **NOTE**: If any of the packages being installed are meant to be development dependencies, ensure you use the `-D` flag (e.g., `pnpm add -D <packagename>`).
+   
 4. **PostCSS Setup**: Mantine relies on PostCSS for its styles. Install `postcss` and `postcss-preset-mantine` as dev dependencies (e.g., `pnpm add -D postcss postcss-preset-mantine`). Then, create a `postcss.config.cjs` (or `postcss.config.mjs`) file in the project directory with the following content:
    ```javascript
       module.exports = {
