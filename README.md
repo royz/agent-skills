@@ -22,12 +22,21 @@ If you want to install a specific skill instead of all of them, use the `--skill
 npx skills add https://github.com/royz/agent-skills --skill <skill-name>
 ```
 
-**Example:**
+**Examples:**
+
 To install the `mantine` skill:
+
 ```bash
 npx skills add https://github.com/royz/agent-skills --skill mantine
+```
+
+To install the `web-scraper` skill:
+
+```bash
+npx skills add https://github.com/royz/agent-skills --skill web-scraper
 ```
 
 ## Available Skills
 
 - **mantine**: Comprehensive Mantine skill for integrating the component library, configuring themes, and generating standard component patterns.
+- **web-scraper**: Build public, single-page Node.js scrapers with native fetch and Linkedom.

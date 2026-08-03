@@ -1,0 +1,4 @@
+interface:
+  display_name: "Web Scraper"
+  short_description: "Build robust Node.js HTML scrapers"
+  default_prompt: "Use $web-scraper to inspect this public page and implement a Node.js fetch and Linkedom scraper for the data I request."
